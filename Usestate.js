@@ -1,3 +1,4 @@
+//useState rerenders the entire content
 import React from 'react'
 import {useState} from 'react'
 function Usestate() {
@@ -9,7 +10,7 @@ function Usestate() {
       id:2,name:'Punnu',Age:'45'
     }
   ]
-    let [myObject,setMyObject]=useState(myBioData);
+    let [myObject,setMyObject]=useState(myBioData);           //as good as myObject=myBioData
     const handleClick=()=>{
       setMyObject([]);
     }
